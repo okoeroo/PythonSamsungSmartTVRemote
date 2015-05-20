@@ -15,7 +15,7 @@ import time
 
 class SmartTVRemote(wx.Frame):
     def __init__(self, parent, id, title):
-        wx.Frame.__init__(self, parent, id, title, size=(350, 300), style=wx.CAPTION | wx.SYSTEM_MENU | wx.CLOSE_BOX)
+        wx.Frame.__init__(self, parent, id, title, size=(450, 400), style=wx.CAPTION | wx.SYSTEM_MENU | wx.CLOSE_BOX)
         self.parent = parent
 
         #Main panel
