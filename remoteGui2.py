@@ -49,24 +49,24 @@ class SmartTVRemote(wx.Frame):
         button_9.Bind(wx.EVT_BUTTON, self.On_9)
 
         # Page Up/Down
-        panel_updown = wx.Panel(panel, 3, pos=(150, 0), size=(75, 75), style=wx.SUNKEN_BORDER)
-        button_up = wx.Button(panel_updown, 50, 'Up', pos=(self.OFFSET_LEFT + 0, self.OFFSET_TOP + 0), size=(50, 30))
-        button_down  = wx.Button(panel_updown, 50, 'Down', pos=(self.OFFSET_LEFT + 0, self.OFFSET_TOP + 30), size=(50, 30))
+        panel_updown = wx.Panel(panel, 3, pos=(150, 0), size=(175, 75), style=wx.SUNKEN_BORDER)
+        button_up = wx.Button(panel_updown, 50, 'Channel Up', pos=(self.OFFSET_LEFT + 0, self.OFFSET_TOP + 0))
+        button_down  = wx.Button(panel_updown, 50, 'Channel Down', pos=(self.OFFSET_LEFT + 0, self.OFFSET_TOP + 30))
 
         button_up.Bind(wx.EVT_BUTTON, self.OnPageUp)
         button_down.Bind(wx.EVT_BUTTON, self.OnPageDown)
 
         # Volume Up/Down
-        panel_volupdown = wx.Panel(panel, 4, pos=(0, 150), size=(90, 75), style=wx.SUNKEN_BORDER)
-        button_volup = wx.Button(panel_volupdown, 50, 'VolUp', pos=(self.OFFSET_LEFT + 0, self.OFFSET_TOP + 0), size=(70, 30))
-        button_voldown  = wx.Button(panel_volupdown, 50, 'VolDown', pos=(self.OFFSET_LEFT + 0, self.OFFSET_TOP + 30), size=(70, 30))
+        panel_volupdown = wx.Panel(panel, 4, pos=(0, 150), size=(190, 75), style=wx.SUNKEN_BORDER)
+        button_volup = wx.Button(panel_volupdown, 50, 'Volume Up', pos=(self.OFFSET_LEFT + 0, self.OFFSET_TOP + 0), size=(170, 30))
+        button_voldown  = wx.Button(panel_volupdown, 50, 'Volume Down', pos=(self.OFFSET_LEFT + 0, self.OFFSET_TOP + 30), size=(170, 30))
 
         button_volup.Bind(wx.EVT_BUTTON, self.OnVolUp)
         button_voldown.Bind(wx.EVT_BUTTON, self.OnVolDown)
 
         # Presets
-        panel_presets = wx.Panel(panel, 5, pos=(100, 150), size=(90, 75), style=wx.SUNKEN_BORDER)
-        button_preset_1 = wx.Button(panel_presets, 50, '311', pos=(self.OFFSET_LEFT + 0, self.OFFSET_TOP + 0), size=(70, 30))
+        panel_presets = wx.Panel(panel, 5, pos=(0, 250), size=(190, 75), style=wx.SUNKEN_BORDER)
+        button_preset_1 = wx.Button(panel_presets, 50, '311 - Zappelin', pos=(self.OFFSET_LEFT + 0, self.OFFSET_TOP + 0), size=(170, 30))
         button_preset_1.Bind(wx.EVT_BUTTON, self.OnPreset_1)
 
 
